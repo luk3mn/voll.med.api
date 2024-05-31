@@ -113,7 +113,10 @@ _Before starting this application in your local environment, it'll be necessary 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ]
+- [x] JPA mapping
+- [x] Migration with Flyway
+- [x] Utilize Bean to make validations
+- [ ] 
 
 
 <p align="right">(<a href="#voll.med.api">back to top</a>)</p>
@@ -145,7 +148,7 @@ If you have any feedback, please reach out to us at lucasnunes2030@gmail.com
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
+* [Create a local database with docker-compose and view it in MySQL Workbench](https://medium.com/@victoria.kruczek_15509/create-a-local-database-with-docker-compose-and-view-it-in-mysql-workbench-974aee047874)
 
 
 <p align="right">(<a href="#voll.med.api">back to top</a>)</p>
