@@ -2,10 +2,7 @@ package med.voll.api.controller;
 
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
-import med.voll.api.medico.DadosCadastroMedico;
-import med.voll.api.medico.DadosListagemMedico;
-import med.voll.api.medico.Medico;
-import med.voll.api.medico.MedicoRepository;
+import med.voll.api.medico.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -37,8 +34,22 @@ public class MedicoController {
         * Example request => GET http://localhost:8080/medicos?size=1&page=2 -> controlado pelo front-end
         * Example Request => GEt http://localhost8080/medicos?sort=crm,desc&size=2&page=1
         * */
-        return repository.findAll(paginacao).map(DadosListagemMedico::new); // Ao retornar Page<>, não precisa mais do stram, pois o Page ja tem o map integrado, e nem precisa da operaçãp final "toList"
+        return repository.findAllByAtivoTrue(paginacao).map(DadosListagemMedico::new); // Ao retornar Page<>, não precisa mais do stram, pois o Page ja tem o map integrado, e nem precisa da operaçãp final "toList"
 //        return repository.findAll(paginacao).stream().map(DadosListagemMedico::new).toList();
+    }
+
+    @PutMapping
+    @Transactional  // visto que o código está anotado como "@Transactional" o trecho de código abaixo ja faz salva as informações no banco de dados
+    public void atualizar(@RequestBody @Valid DadosAtualizacaoMedico dados) {
+        var medico = repository.getReferenceById(dados.id());
+        medico.atualizarInformacoes(dados);
+    }
+
+    @DeleteMapping("/{id}")
+    @Transactional
+    public void excluir(@PathVariable Long id) {
+        var medico = repository.getReferenceById(id);
+        medico.excluir();
     }
 
 }
