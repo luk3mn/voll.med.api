@@ -122,6 +122,7 @@ _Before starting this application in your local environment, it'll be necessary 
 - [x] Update PUT http://localhost:8080/medicos
 - [x] Delete DELETE http://localhost:8080/medicos/{id}
 - [x] GET http://localhost:8080/medicos/{id}
+- [x] Exception handler
 
 <p align="right">(<a href="#voll.med.api">back to top</a>)</p>
 
