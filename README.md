@@ -124,6 +124,9 @@ _Before starting this application in your local environment, it'll be necessary 
 - [x] GET http://localhost:8080/medicos/{id}
 - [x] Exception handler
 - [x] Authentication method POST http://localhost:8080/login
+- [x] JSON Web Token (JWT) => Token Generator
+- [ ] Access Control Authorization
+
 
 <p align="right">(<a href="#voll.med.api">back to top</a>)</p>
 
@@ -155,7 +158,7 @@ If you have any feedback, please reach out to us at lucasnunes2030@gmail.com
 ## Acknowledgments
 
 * [Create a local database with docker-compose and view it in MySQL Workbench](https://medium.com/@victoria.kruczek_15509/create-a-local-database-with-docker-compose-and-view-it-in-mysql-workbench-974aee047874)
-
+* [java-jwt](https://github.com/auth0/java-jwt)
 
 <p align="right">(<a href="#voll.med.api">back to top</a>)</p>
 
