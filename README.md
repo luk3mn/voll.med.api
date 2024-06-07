@@ -125,7 +125,7 @@ _Before starting this application in your local environment, it'll be necessary 
 - [x] Exception handler
 - [x] Authentication method POST http://localhost:8080/login
 - [x] JSON Web Token (JWT) => Token Generator
-- [ ] Access Control Authorization
+- [x] Access Control Authorization
 
 
 <p align="right">(<a href="#voll.med.api">back to top</a>)</p>
@@ -178,7 +178,7 @@ If you have any feedback, please reach out to us at lucasnunes2030@gmail.com
 [license-url]: https://github.com/luk3mn/voll.med.api/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/lucasmaues/
-[personal-shield]: https://img.shields.io/static/v1?label=Ocracle_one&message=Alura&color=2e3643&style=for-the-badge&colorB=555
+[personal-shield]: https://img.shields.io/static/v1?label=Oracle_one&message=Alura&color=2e3643&style=for-the-badge&colorB=555
 
 <!-- Stack Shields -->
 [Java]: https://img.shields.io/badge/Java-E02027?style=for-the-badge&logo=java&logoColor=ffffff
