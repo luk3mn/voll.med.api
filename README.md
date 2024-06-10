@@ -122,6 +122,11 @@ _Before starting this application in your local environment, it'll be necessary 
 - [x] Update PUT http://localhost:8080/medicos
 - [x] Delete DELETE http://localhost:8080/medicos/{id}
 - [x] GET http://localhost:8080/medicos/{id}
+- [x] GET http://localhost:8080/pacientes
+- [x] GET http://localhost:8080/pacientes/{id}
+- [x] POST http://localhost:8080/pacientes
+- [x] PUT http://localhost:8080/pacientes
+- [x] DELETE http://localhost:8080/pacientes/{id}
 - [x] Exception handler
 - [x] Authentication method POST http://localhost:8080/login
 - [x] JSON Web Token (JWT) => Token Generator
