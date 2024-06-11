@@ -131,6 +131,8 @@ _Before starting this application in your local environment, it'll be necessary 
 - [x] Authentication method POST http://localhost:8080/login
 - [x] JSON Web Token (JWT) => Token Generator
 - [x] Access Control Authorization
+- [x] POST http://localhost:8080/consultas
+- [ ] DELETE http://localhost:8080/consultas/{id}
 
 
 <p align="right">(<a href="#voll.med.api">back to top</a>)</p>
