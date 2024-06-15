@@ -133,6 +133,7 @@ _Before starting this application in your local environment, it'll be necessary 
 - [x] Access Control Authorization
 - [x] POST http://localhost:8080/consultas
 - [ ] DELETE http://localhost:8080/consultas/{id}
+- [ ] Validations
 
 
 <p align="right">(<a href="#voll.med.api">back to top</a>)</p>
