@@ -26,6 +26,7 @@ public class SecurityConfigurations {
                 .sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS)) // Indica o sistema de autenticação é "STATELESS"
                 .authorizeHttpRequests(req -> {
                     req.requestMatchers("/login").permitAll(); // libera apenas a rota de "/login" pois não precisamos de toquemos, visto que é obde será gerado o token a partir do login
+                    req.requestMatchers("/v3/api-docs/**", "/swagger-ui.html", "/swagger-ui/**").permitAll();
                     req.anyRequest().authenticated(); // o resto precisa ser feito a autenticação pelo token
                 })
                 .addFilterBefore(securityFilter, UsernamePasswordAuthenticationFilter.class) // Para executar antes do filtro padrão do Spring, que negaria as requisições
