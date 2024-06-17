@@ -8,7 +8,7 @@
 ![personal][personal-shield]
 [![Issues][issues-shield]][issues-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-![Badge em Desenvolvimento](https://img.shields.io/static/v1?label=STATUS&message=Development&color=GREEN&style=for-the-badge)
+![Badge em Desenvolvimento](https://img.shields.io/static/v1?label=STATUS&message=Finished&color=GREEN&style=for-the-badge)
 
 <!-- ![image](soft%20(1).png) -->
 
@@ -65,7 +65,7 @@
 <!-- IMAGE (OPCIONAL) -->
 
 <p align="justify">
-
+Backend application designed to create an API for a medical system that registers doctors and patients, with additional functionality to book appointments. The system allows for comprehensive management of medical records, including doctor profiles, patient information, and appointment scheduling. This application ensures efficient data handling and seamless integration, providing a robust solution for healthcare providers and patients.
 </p> 
 
 <p align="right">(<a href="#voll.med.api">back to top</a>)</p>
@@ -87,7 +87,8 @@ Here are some important topics about this project and how to replay it.
 
 ### Prerequisites
 
-* 
+* Java 17
+* Docker
 
 ### Installation
 
@@ -97,7 +98,10 @@ _Before starting this application in your local environment, it'll be necessary 
    ```sh
    git clone https://github.com/luk3mn/voll.med.api.git
    ```
-
+2. To set up database by using Docker
+   ```shell
+   sudo docker-compose up -d
+   ```
 
 <p align="right">(<a href="#voll.med.api">back to top</a>)</p>
 
@@ -107,7 +111,11 @@ _Before starting this application in your local environment, it'll be necessary 
 <!-- ## Usage -->
 
 <!-- Deploy -->
-<!-- ## Deploy -->
+## Deploy
+- Java Build Application
+```shell
+java -Dspring.profiles.active=prod -DHOST=localhost -DDB_USER=root -DDB_PASSWORD=root -DDB_NAME=vollmed -jar target/api-0.0.1-SNAPSHOP.jar
+```
 
 
 <!-- ROADMAP -->
@@ -132,8 +140,8 @@ _Before starting this application in your local environment, it'll be necessary 
 - [x] JSON Web Token (JWT) => Token Generator
 - [x] Access Control Authorization
 - [x] POST http://localhost:8080/consultas
-- [ ] DELETE http://localhost:8080/consultas/{id}
-- [ ] Validations
+- [x] Validations
+- [x] Automated Test (JUnit, Mockito)
 
 
 <p align="right">(<a href="#voll.med.api">back to top</a>)</p>
